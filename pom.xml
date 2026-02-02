@@ -88,7 +88,8 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security-test</artifactId>
-			<scope>test</scope>
+			<version>4.0.2</version>
+			<scope>compile</scope>
 		</dependency>
 
 	</dependencies>

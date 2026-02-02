@@ -16,6 +16,4 @@ public class AbstractReferenceModel extends AbstractRootModel {
     @Column(name = "DESCRIPTION")
     private String description;
 
-    @Column(name = "ACTIVE")
-    private Boolean active = Boolean.TRUE;
 }

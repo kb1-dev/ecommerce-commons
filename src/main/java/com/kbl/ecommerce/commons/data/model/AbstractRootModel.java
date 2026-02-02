@@ -10,10 +10,13 @@ import lombok.Setter;
 public class AbstractRootModel {
 
     @Id
-    @Column(name = "ID")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.UUID)
     private Long id;
 
-    @Column(name = "DELETED")
+    @Column(name = "deleted")
     private Boolean deleted = Boolean.FALSE;
+
+    @Column(name = "is_active", nullable = false)
+    private Boolean isActive = Boolean.TRUE;
 }
